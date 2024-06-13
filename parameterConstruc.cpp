@@ -7,25 +7,31 @@ class Complex
     int a, b;
 
 public:
-    Complex(void);
+    Complex(int x, int y);
     void printNumber()
     {
         cout << "the numbers are " << a << " and " << b;
     }
 };
 
-// Default constructor
 
-Complex ::Complex(void)
+// parameterized constructor
+
+Complex ::Complex(int x, int y)
 {
-    a = 10;
-    b = 30;
+    a = x;
+    b = y;
 }
 
 int main()
 {
+    // Implicit Call
+    Complex object(4, 5);
 
-    Complex object;
+    // Explicit Call
+    Complex a = Complex(10, 20);
+
+    a.printNumber();
     object.printNumber();
 
     return 0;
