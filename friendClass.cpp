@@ -27,9 +27,6 @@ class Complex
 
     // Declare the entire class as friend
     friend class Calculator;
-
-
-
 public:
     void setNumber(int n1, int n2)
     {
