@@ -29,26 +29,29 @@ Note: Default visibility mode is private.
 
 */
 
-class Manager :  Emp{ 
+class Manager : public Emp
+ { 
    public:
     int languageCode = 7;
 
-    Manager(int inpid){
-        id = inpid;
+    Manager(int inpid)
+    {
+      id = inpid;
     }
 
 
-};
+  };
+ 
 
-
-int main(){
+int main()
+  {
 
     Emp shamim(1, 1000), sauda(2, 2000);
 
    cout<<"Shamim Salary "<<shamim.salary<<endl;
    cout<<"Sauda Salary "<<sauda.salary<<endl;
            
-           Manager SaudaManager(2);
+    Manager SaudaManager(2);
 
     return 0;
-}
+ }
