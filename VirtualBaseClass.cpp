@@ -1,5 +1,7 @@
 #include<iostream>
 
+// Virtual Base Class use in Hybrid Inheritance
+
 using namespace std;
 
 class Student{
