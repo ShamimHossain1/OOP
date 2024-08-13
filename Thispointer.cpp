@@ -7,8 +7,9 @@ using namespace std;
 class A{
     public:
     int a;
-    void setData(int a){
+    A & setData(int a){
         this->a = a;
+        return *this;
     }
     int getData(){
         cout<<"The value of A is: "<<a<<endl;
@@ -18,8 +19,8 @@ class A{
 int main(){
 
     A a;
-    a.setData(10);
-    a.getData();
+    a.setData(10).getData();
+    // a.getData();
 
     
 

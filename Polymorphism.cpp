@@ -1,4 +1,5 @@
 // Polymorphism
+// Run time polymorphism
 
 #include<iostream>
 
@@ -28,14 +29,18 @@ int main(){
     Base objBase;
     derived objDerived;
 
-    Base_pointer = &objDerived;
-    Derived_pointer = &objDerived;
+    Base_pointer = &objBase;
+    Derived_pointer = &objBase;
 
     Base_pointer->varBase= 50;
     Base_pointer->display();
 
-    Derived_pointer->varDerived= 30;
-    Derived_pointer->display();
+    Derived_pointer->varBase= 500;
+    Base_pointer->display();
+
+
+    // Derived_pointer->varDerived= 30;
+    // Derived_pointer->display();
     
 
     return 0;
