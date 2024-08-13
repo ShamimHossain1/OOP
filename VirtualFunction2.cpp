@@ -1,4 +1,6 @@
 // virtual function example
+// Abstract Base Class
+// Pure virtual function
 #include<iostream>
 #include<cstring>
 
@@ -7,42 +9,43 @@ using namespace std;
 
 class Sauda{
     protected:
-    string title;
-    float rating;
+        string title;
+        float rating;
     public:
-    Sauda(string t, float r){
-        title= t;
-        rating = r;
-    }
-    virtual void display() {}
+        Sauda(string t, float r){
+            title= t;
+            rating = r;
+        }
+        virtual void display() = 0 ; // Pure virtual function // Do nothing function
+
 };
 
 class Movie : public Sauda{
     int videoLength;
     public:
-    Movie(string t, float r, int v) : Sauda(t, r){
-        videoLength = v;
-    }
-    void display(){
-        cout << "------Movie Class-----" << endl;
-        cout << "Title: " << title << endl;
-        cout << "Rating: " << rating << endl;
-        cout << "Video Length: " << videoLength <<"hr"<< endl;
-    }
+        Movie(string t, float r, int v) : Sauda(t, r){
+            videoLength = v;
+        }
+        void display(){
+            cout << "------Movie Class-----" << endl;
+            cout << "Title: " << title << endl;
+            cout << "Rating: " << rating << endl;
+            cout << "Video Length: " << videoLength <<"hr"<< endl;
+        }
 };
 
 class Characters : public Sauda{
     int cast;
-    public:
-    Characters (string t, float r, int w) : Sauda(t, r){
-        cast = w;
-    }
-    void display(){
-        cout << "-----Characters  Class-------" << endl;
-        cout << "Title: " << title << endl;
-        cout << "Rating: " << rating << endl;
-        cout << "No of cast: " << cast << endl;
-    }
+        public:
+            Characters (string t, float r, int w) : Sauda(t, r){
+                cast = w;
+            }
+            void display(){
+                cout << "-----Characters  Class-------" << endl;
+                cout << "Title: " << title << endl;
+                cout << "Rating: " << rating << endl;
+                cout << "No of cast: " << cast << endl;
+            }
 };
 
 int main(){
