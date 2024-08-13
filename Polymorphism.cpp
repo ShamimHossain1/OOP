@@ -30,7 +30,7 @@ int main(){
     derived objDerived;
 
     Base_pointer = &objBase;
-    Derived_pointer = &objBase;
+    Derived_pointer = &objDerived;
 
     Base_pointer->varBase= 50;
     Base_pointer->display();
