@@ -17,7 +17,7 @@ int max_of_four(int a, int b, int c, int d)
 
     int great = 0;
 
-    for (int i = 0; i > 4; i++)
+    for (int i = 0; i < 4; i++)
     {
         if (nums[i] > great)
         {
