@@ -1,21 +1,41 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-unsigned long long fibonacci(int n) {
-    if (n < 2) {
-        return n;
-    }
-    
-    unsigned long long a = 0, b = 1, c;
-    for (int i = 2; i <= n; i++) {
-        c = a + b;
-        a = b;
-        b = c;
-    }
-    return b;
-}
 
 int main() {
-    cout << "The Fibonacci number at position 60 is: " << fibonacci(60) << endl;
+    int n , q;
+    cin >> n >> q;
+    vector<vector<int>> arr(n);
+    
+
+    for (int i = 0; i < n; i++)
+    {
+        int k;
+        cin >> k;
+        vector<int> a(k);
+        
+        for (int i = 0; i < k; i++)
+        {
+            cin >> a[i]; 
+        } 
+        arr[i] = a;
+    }
+
+    for (int i = 0; i < q; i++)
+    {
+        int l , r;
+        cin >> l >> r;
+
+        cout<<arr[l][r]<<endl;
+
+    }
+    
+    
+   
+
     return 0;
 }
