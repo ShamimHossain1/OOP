@@ -1,35 +1,37 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-class Number  {
+class Number
+{
     int a;
-    public:
-    Number(){}
-     Number(int x) {
+
+public:
+    Number() {}
+    Number(int x)
+    {
         a = x;
-        }
-     Number(Number &obj) {
-        cout<<"Copy constructor called"<<endl;
+    }
+    Number(Number &obj)
+    {
+        cout << "Copy constructor called" << endl;
 
         a = obj.a;
-        }
+    }
 
-    
-
-        void display() {
-            cout << "Number is: " << a << endl;
-            }
-
+    void display()
+    {
+        cout << "Number is: " << a << endl;
+    }
 };
 
+int main()
+{
 
-int main(){
+    Number X(20);
+    X.display();
 
-Number X(20);
-X.display();
-    
-Number z(X);
-z.display();
+    Number z(X);
+    z.display();
     return 0;
 }

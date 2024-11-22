@@ -5,8 +5,6 @@ using namespace std;
     int num = 0;
 class Number
 {
-
-
 public:
     Number()
     {

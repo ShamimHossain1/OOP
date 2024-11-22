@@ -44,7 +44,7 @@ public:
         cout << "The sum of the values is " << x + Y << endl;
     }
     void he(){
-        Base1::he();
+        Base2::he();
     }
 };
 

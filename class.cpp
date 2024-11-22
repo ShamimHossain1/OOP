@@ -25,6 +25,7 @@ void employee ::setData(int A, int B, int C)
     a = A;
     b = B;
     c = C;
+
 }
 
 int main()
