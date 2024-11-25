@@ -16,7 +16,6 @@ class Base{
         cout<<"Data from Base class: "<<data<<endl;
         }
 };
-
 class Base2{
       int data2;
       public:
@@ -27,9 +26,7 @@ class Base2{
       void printDataBase2(){
         cout<<"Data from Base2 class: "<<data2<<endl;
       }
-
 };
-
 class Derived: public Base2 , public Base{
     int derived1, derived2;
         public:
@@ -44,8 +41,6 @@ class Derived: public Base2 , public Base{
         }
 
 };
-
-
 int main(){
 
     Derived Sauda(1, 2, 3, 4);

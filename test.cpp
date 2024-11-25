@@ -5,37 +5,21 @@
 #include <algorithm>
 using namespace std;
 
+class constract {
+    int a;
+    int b;
+    public:
+       constract(int i, int j) :  b(a),a(i){
+        cout << "Constructor called" << endl;
+        cout << "value of a is :" <<a<<endl;
+        cout << "value of b is :" <<b<<endl;
+       }
+};
+
 
 int main() {
-    int n , q;
-    cin >> n >> q;
-    vector<vector<int>> arr(n);
+
+constract obj(10, 20);
     
-
-    for (int i = 0; i < n; i++)
-    {
-        int k;
-        cin >> k;
-        vector<int> a(k);
-        
-        for (int i = 0; i < k; i++)
-        {
-            cin >> a[i]; 
-        } 
-        arr[i] = a;
-    }
-
-    for (int i = 0; i < q; i++)
-    {
-        int l , r;
-        cin >> l >> r;
-
-        cout<<arr[l][r]<<endl;
-
-    }
-    
-    
-   
-
     return 0;
 }

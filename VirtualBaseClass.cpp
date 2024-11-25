@@ -16,7 +16,7 @@ class Student{
         }
 };
 
-class Test:virtual public Student{
+class Test: virtual public Student{
     protected:
        float math, physics;
        public:
