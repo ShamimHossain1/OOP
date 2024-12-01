@@ -19,7 +19,7 @@ int main(){
     //   *p = 20;
 
       func(p);
-      delete[] p;
+      // delete p;
 
     // cout << "Value of n: " << n << endl;
     cout << "Value of p: " << p << endl;
