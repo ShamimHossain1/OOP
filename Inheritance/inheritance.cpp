@@ -1,5 +1,8 @@
 #include<iostream>
 
+// ----------  Single Inheritance
+
+
 using namespace std;
 
 // Base Class

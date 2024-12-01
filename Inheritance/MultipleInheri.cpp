@@ -1,5 +1,7 @@
 #include <iostream>
 
+// ----------  Multiple Inheritance
+
 using namespace std;
 
 class Base1

@@ -1,5 +1,5 @@
 // Calculator
-// Multiple inheritance
+//---------- Multiple inheritance----------------
 // Ambiguity Resolution
 
 
