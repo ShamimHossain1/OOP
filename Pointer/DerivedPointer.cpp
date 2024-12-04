@@ -25,8 +25,11 @@ class derivedClass : public baseClass
 int main(){
 
     baseClass * base_class_pointer;
+
     baseClass obj_base;
     derivedClass obj_derived;
+
+
 
     base_class_pointer = &obj_derived;
 

@@ -24,7 +24,7 @@ int main(){
 
 Base *baseP;
 derived objDerived;
-Base objBase;
+
 
 baseP = &objDerived;
 baseP->display(); 
