@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class Complex {
+class Complex
+{
 private:
     double real;
     double imag;
@@ -11,17 +12,20 @@ public:
     Complex(double r = 0, double i = 0) : real(r), imag(i) {}
 
     // Overload + operator
-    Complex operator+(const Complex& other) {
+    Complex operator+(const Complex &other)
+    {
         return Complex(real + other.real, imag + other.imag);
     }
 
     // Display function
-    void display() const {
+    void display() const
+    {
         cout << real << " + " << imag << "i" << endl;
     }
 };
 
-int main() {
+int main()
+{
     Complex c1(3.5, 2.5);
     Complex c2(1.5, 4.5);
 

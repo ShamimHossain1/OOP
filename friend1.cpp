@@ -16,19 +16,18 @@ public:
     //     a = x;
     //     b = y;
     // }
-friend void Friend(Sauda &x, Shamim &y);
+    friend void Friend(Sauda &x, Shamim &y);
 
-void display(void)
+    void display(void)
     {
         cout << "a is:" << a << endl;
     }
-   
 };
 class Shamim
 {
 
 private:
-    int  b;
+    int b;
 
 public:
     // void setData(int x, int y)
@@ -37,19 +36,18 @@ public:
     //     a = x;
     //     b = y;
     // }
-friend void Friend(Sauda &x, Shamim &y);
+    friend void Friend(Sauda &x, Shamim &y);
     void display(void)
     {
         cout << "b is:" << b << endl;
     }
 };
 
-void Friend(Sauda &x, Shamim &y){
+void Friend(Sauda &x, Shamim &y)
+{
     x.a = 10;
     y.b = 30;
 }
-
-
 
 int main()
 {
@@ -58,7 +56,7 @@ int main()
     Shamim Sha;
 
     // shamim.setData(30, 40);
-    Friend(sau,Sha);
+    Friend(sau, Sha);
     sau.display();
     Sha.display();
 

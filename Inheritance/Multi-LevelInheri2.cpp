@@ -2,7 +2,6 @@
 
 // ----------  Multilevel Inheritance
 
-
 using namespace std;
 
 class Student
@@ -32,39 +31,42 @@ protected:
     int Physics;
 
 public:
-void setMarks(int, int);
-void getMarks();
-
+    void setMarks(int, int);
+    void getMarks();
 };
 
-void Exam :: setMarks(int m1, int m2){
+void Exam ::setMarks(int m1, int m2)
+{
     Math = m1;
     Physics = m2;
 }
 
-void Exam :: getMarks(){
+void Exam ::getMarks()
+{
     cout << "Math Marks: " << Math << endl;
     cout << "Physics Marks: " << Physics << endl;
 }
 
-class Result : public Exam {
-    protected:
+class Result : public Exam
+{
+protected:
     float percentage;
-    public:
+
+public:
     void calculatePercentage();
     void displayResult();
-
 };
-void Result :: calculatePercentage(){
+void Result ::calculatePercentage()
+{
     percentage = (Math + Physics) / 2.0;
 }
 
-void Result :: displayResult(){
+void Result ::displayResult()
+{
     calculatePercentage();
     getRoll();
     getMarks();
-    cout << "Percentage: " << percentage<<"%"<< endl;
-
+    cout << "Percentage: " << percentage << "%" << endl;
 }
 
 int main()
@@ -74,7 +76,6 @@ int main()
     Shamim.setRoll(1);
     Shamim.setMarks(30, 40);
     Shamim.displayResult();
-
 
     return 0;
 }

@@ -1,34 +1,37 @@
-// Polymorphism 
+// Polymorphism
 // Virtual Function Run time
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-class Base{
-    public:
+class Base
+{
+public:
     int varBase;
-   virtual void display(){
-        cout<<"Base class var: "<<varBase<<endl;
+    virtual void display()
+    {
+        cout << "Base class var: " << varBase << endl;
     }
 };
-class derived : public Base{
-    public:
+class derived : public Base
+{
+public:
     int varDerived;
-    void display(){
-        cout<<"Derived class var: "<<varDerived<<endl;
-        cout<<"Derived class var: "<<varDerived<<endl;
+    void display()
+    {
+        cout << "Derived class var: " << varDerived << endl;
+        cout << "Derived class var: " << varDerived << endl;
     }
 };
 
-int main(){
+int main()
+{
 
-Base *baseP;
-derived objDerived;
+    Base *baseP;
+    derived objDerived;
 
-
-baseP = &objDerived;
-baseP->display(); 
-    
+    baseP = &objDerived;
+    baseP->display();
 
     return 0;
 }

@@ -1,38 +1,44 @@
 #include <iostream>
 using namespace std;
 
-class Rectangle {
+class Rectangle
+{
 private:
     int length;
     int width;
 
 public:
     // Constructor to initialize length and width
-    Rectangle(int length, int width) {
+    Rectangle(int length, int width)
+    {
         // Using 'this' to resolve naming conflict
         this->length = length;
         this->width = width;
     }
 
     // Method to calculate area
-    int calculateArea() const {
+    int calculateArea() const
+    {
         return this->length * this->width; // Using 'this' to access members
     }
 
     // Method to return the current object
-    Rectangle& setDimensions(int length, int width) {
+    Rectangle &setDimensions(int length, int width)
+    {
         this->length = length;
         this->width = width;
         return *this; // Returning the current object
     }
 
     // Method to display dimensions
-    void display() const {
+    void display() const
+    {
         cout << "Length: " << this->length << ", Width: " << this->width << endl;
     }
 };
 
-int main() {
+int main()
+{
     // Create a Rectangle object
     Rectangle rect(10, 5);
 

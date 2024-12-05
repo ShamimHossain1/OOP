@@ -1,28 +1,30 @@
-#include<iostream>
+#include <iostream>
 
 // This pointer uses
 
 using namespace std;
 
-class A{
-    public:
+class A
+{
+public:
     int a;
-    A & setData(int a){
+    A &setData(int a)
+    {
         this->a = a;
         return *this;
     }
-    int getData(){
-        cout<<"The value of A is: "<<a<<endl;
+    int getData()
+    {
+        cout << "The value of A is: " << a << endl;
     }
 };
 
-int main(){
+int main()
+{
 
     A a;
     a.setData(10).getData();
     // a.getData();
-
-    
 
     return 0;
 }

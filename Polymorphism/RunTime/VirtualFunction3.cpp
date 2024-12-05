@@ -64,14 +64,13 @@ int main()
     CWHBook Habits(title, rating, page);
     // Habits.display();
 
-
-    title ="Rich dad, Poor dad";
+    title = "Rich dad, Poor dad";
     rating = 4.6;
     words = 25600;
     CWHtext Rich(title, rating, words);
     // Rich.display();
 
-    CWH * Book[2];
+    CWH *Book[2];
     Book[0] = &Habits;
     Book[1] = &Rich;
 

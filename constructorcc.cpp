@@ -18,7 +18,7 @@ public:
 Complex ::Complex(int param)
 {
     real = param;
-} 
+}
 
 int main()
 {

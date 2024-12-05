@@ -14,9 +14,9 @@ public:
     {
         x = a;
     }
-    void he(){
+    void he()
+    {
         cout << "Base1" << endl;
-        
     }
 };
 
@@ -30,9 +30,9 @@ public:
     {
         Y = b;
     }
-     void he(){
+    void he()
+    {
         cout << "Base2" << endl;
-        
     }
 };
 
@@ -45,7 +45,8 @@ public:
         cout << "The value of Y is " << Y << endl;
         cout << "The sum of the values is " << x + Y << endl;
     }
-    void he(){
+    void he()
+    {
         Base2::he();
     }
 };
