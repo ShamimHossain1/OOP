@@ -1,0 +1,3 @@
+hello c++
+object oriented programming
+file control in c++

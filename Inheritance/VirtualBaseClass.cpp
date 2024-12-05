@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 // Virtual Base Class use in------------ Hybrid Inheritance-------------
