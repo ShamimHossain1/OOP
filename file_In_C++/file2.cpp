@@ -19,6 +19,8 @@ int main(){
     getline(hin, lines);
     cout<<lines;
     hin.close();
+
+    
     
 
     return 0;
