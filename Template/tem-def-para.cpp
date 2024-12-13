@@ -22,8 +22,43 @@ public:
         cout << "Value of b: " << b << endl;
     }
 };
+
+
+// float funcAverage(int a, int b){
+//     float avg = (float)(a+b)/2;
+//     return avg;
+// }
+
+
+template <class T1, class T2>
+float funcAverage(T1 a, T2 b){
+    float avg = (a+b)/2.0;
+    return avg;
+}
+
+
+// Swap variable
+
+template <class T1, class T2>
+void swap(T1 &a, T2 &b)
+{
+    T1 temp = a;
+    a = b;
+    b = temp;
+    }
+
 int main()
 {
+
+    int f = 10, b = 20;
+    swap(f, b);
+    cout << "Value of f: " << f << endl;
+    cout << "Value of b: " << b << endl;
+
+
+    float a;
+    a = funcAverage(5, 2.3);
+    cout << "Average of 5 and 3 is: " << a << endl;
 
     shamim<> s(3, 4.4);
     s.display();
