@@ -7,6 +7,7 @@ class Complex
     int a, b;
 
 public:
+
     Complex(void);
     void printNumber()
     {
