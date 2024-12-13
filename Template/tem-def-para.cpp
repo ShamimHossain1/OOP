@@ -21,7 +21,12 @@ public:
         cout << "Value of a: " << a << endl;
         cout << "Value of b: " << b << endl;
     }
+    void setup();
 };
+template <class T1, class T2>
+void shamim<T1, T2> :: setup(){
+    cout << "Setup function called" << endl;
+}
 
 
 // float funcAverage(int a, int b){
@@ -50,21 +55,23 @@ void swap(T1 &a, T2 &b)
 int main()
 {
 
-    int f = 10, b = 20;
-    swap(f, b);
-    cout << "Value of f: " << f << endl;
-    cout << "Value of b: " << b << endl;
+    // float f = 10;
+    // float b = 20.5;
+    // swap(f, b);
+    // cout << "Value of f: " << f << endl;
+    // cout << "Value of b: " << b << endl;
 
 
-    float a;
-    a = funcAverage(5, 2.3);
-    cout << "Average of 5 and 3 is: " << a << endl;
+    // float a;
+    // a = funcAverage(5, 2.3);
+    // cout << "Average of 5 and 3 is: " << a << endl;
 
     shamim<> s(3, 4.4);
     s.display();
 
     shamim<char, int> sauda('s', 5);
     sauda.display();
+    sauda.setup();
 
     return 0;
 }
