@@ -6,7 +6,9 @@
         "xstring": "cpp",
         "vector": "cpp",
         "iosfwd": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "list": "cpp",
+        "xutility": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
     "cSpell.words": [
