@@ -14,12 +14,20 @@ int main(){
     marks["Charlie"] = 80;
     marks["David"] = 92;
 
+    marks.insert({{"shamim", 78},{"sauda", 98}});
     map<string, int> :: iterator it;
-    for (it = marks.begin(); it != marks.end(); it++)
+  
+
+    cout<<"Current Size: "<<marks.size()<<endl;
+    cout<<"Max Size: "<<marks.max_size()<<endl;
+    cout<<marks.empty()<<endl;
+    
+      for (it = marks.begin(); it != marks.end(); it++)
     {
         cout << it->first << " " << it->second << endl;
 
-    }
+    } 
+
 
     return 0;
 }
