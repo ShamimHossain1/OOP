@@ -28,9 +28,6 @@ int main()
     // display(vec4);
     display(v);
 
-
-
-
     int element;
 
     // for (int i = 0; i < 4; i++)
