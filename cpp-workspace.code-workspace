@@ -11,7 +11,8 @@
 			"iostream": "cpp",
 			"xutility": "cpp",
 			"vector": "cpp",
-			"ostream": "cpp"
+			"ostream": "cpp",
+			"queue": "cpp"
 		}
 	}
 }
