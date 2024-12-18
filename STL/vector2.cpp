@@ -9,6 +9,13 @@ int main()
     vector<int> vec{1, 2, 3, 4, 5, 6, 7, 8, 9};
     vector<int> vec1(vec);
 
+    for(int val : vec){
+        cout << val << " ";
+        
+    }
+    cout <<"end"<< endl;
+
+
 
 
     // vec.push_back(1);
@@ -32,6 +39,7 @@ int main()
 
     // ?? iterator loop
     vector<int> ::iterator it;
+    
     for (it = vec.begin(); it != vec.end(); it++)
     {
         cout << *it << " ";
